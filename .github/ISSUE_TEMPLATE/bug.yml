@@ -1,0 +1,28 @@
+name: 缺陷反馈
+description: 报告流光显示、安装或菜单异常
+title: "[Bug] "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: 插件、Unity 版本与目标平台
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 如何复现
+      description: 从选择头发开始，写出能重现问题的最短步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期效果与实际效果
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息
+      description: 可附截图、相关 Console 报错、材质 Shader 名或 Modular Avatar 版本。
